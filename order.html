@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Fuel Delivery Service</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/cb/eb/76/cbeb76a07a92e539ae90850767376f98.jpg" alt="Logo">
+        </div>
+        <div class="title">
+        <h1>Fueliter.</h1>
+        <!-- Add your logo or branding here -->
+    </header>
+
+    <!-- Navigation Links Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="order.html" class="active">Order Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Pricing For Fuel Section -->
+    <section id="pricing">
+        <h2>Pricing For Fuel.</h2>
+    <strong>
+        <p>Gasoline 110 KES to 120 KES (per liter).</p>
+        <p>Diesel 95 KES to 105 KES  (per liter).</p>
+        <p>BioDiesel 100 KES to 110 KES (per liter). </p>
+        <p>Propane 100 KES to 120 KES (per kg).</p>
+        <p>Heating Oil (Kerosene) 90 KES to 100 KES (per liter).</p>
+        <p>Ethanol 80 KES to 90 KES (per liter).</p>
+        <p>Methanol  85 KES to 95 KES (per liter).</p>
+        <p>Aviation Fuel 1400 KES to 1500 KES (per liter).</p>
+        <p>Natural Gas 60 KES to 70 KES (per m³).</p>
+        <p>Hydrogen 200 KES to 220 KES (per kg).</p>
+    </strong>
+        <!-- Add pricing information for fuel here -->
+    </section>
+
+    <!-- Order Now Section -->
+    <section id="order">
+        <h2>Order Now!!!</h2>
+        <form action="order.php" method="POST">
+            <div class="form-group">
+                <label for="fuel-type">Fuel Type:</label>
+                <select id="fuel-type" name="fuel-type" required>
+                    <option value="Gasoline">Gasoline</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Biodiesel">Biodiesel</option>
+                    <option value="Propane">Propane</option>
+                    <option value="Heating Oil (Kerosene)">Heating Oil (Kerosene)</option>
+                    <option value="Ethanol">Ethanol</option>
+                    <option value="Methanol">Methanol</option>
+                    <option value="Aviation Fuel">Aviation Fuel</option>
+                    <option value="Natural Gas">Natural Gas</option>
+                    <option value="Hydrogen">Hydrogen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity (liters):</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-address">Delivery Address:</label>
+                <input type="text" id="delivery-address" name="delivery-address" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="date" id="delivery-date" name="delivery-date" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery-time">Delivery Time:</label>
+                <input type="time" id="delivery-time" name="delivery-time" required>
+            </div>
+            <div class="form-group">
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+            </div>
+            <button type="submit">Add To Cart</button>
+        </form>
+
+        <!-- Add order form or ordering instructions here -->
+    </section>
+
+    <!-- Cart Summary Section -->
+    <section id="cart-summary">
+        <h2>Cart Summary</h2>
+        <div class="cart-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="selected-fuel">Selected Fuel Type:</label>
+                    <input type="text" id="selected-fuel" name="selected-fuel" value="Gasoline" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity (liters):</label>
+                    <input type="text" id="quantity" name="quantity" value="50" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-address">Delivery Address:</label>
+                    <input type="text" id="delivery-address" name="delivery-address" placeholder="Enter delivery address">
+                </div>
+                <div class="form-group">
+                    <label for="delivery-date">Delivery Date:</label>
+                    <input type="text" id="delivery-date" name="delivery-date" value="2024-03-30" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-time">Delivery Time:</label>
+                    <input type="text" id="delivery-time" name="delivery-time" value="10:00 AM" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests" placeholder="Enter any special requests"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Delivery Options:</label><br>
+                    <label><input type="radio" name="delivery-options" value="Standard"> Standard</label>
+                    <label><input type="radio" name="delivery-options" value="Express"> Express</label>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method:</label><br>
+                    <label><input type="radio" name="payment-method" value="Credit Card"> Credit Card</label>
+                    <label><input type="radio" name="payment-method" value="Mobile Money"> Mobile Money</label>
+                </div>
+                <button type="submit">Proceed to Checkout</button>
+            </form>
+        </div>
+        <!-- Add summary of items in the cart here -->
+    </section>
+    <script>
+        // Function to handle "Add to Cart" button click
+        document.getElementById('add-to-cart-btn').addEventListener('click', function() {
+            // Get values from the order form
+            var selectedFuel = document.getElementById('selected-fuel').value;
+            var quantity = document.getElementById('quantity').value;
+            var deliveryAddress = document.getElementById('delivery-address').value;
+            var deliveryDate = document.getElementById('delivery-date').value;
+            var deliveryTime = document.getElementById('delivery-time').value;
+            var specialRequests = document.getElementById('special-requests').value;
+    
+            // Populate the cart summary form with the captured values
+            document.getElementById('cart-form').innerHTML = `
+                <div class="form-group">
+                    <label for="selected-fuel">Selected Fuel Type:</label>
+                    <input type="text" id="selected-fuel" name="selected-fuel" value="${selectedFuel}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity (liters):</label>
+                    <input type="text" id="quantity" name="quantity" value="${quantity}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-address">Delivery Address:</label>
+                    <input type="text" id="delivery-address" name="delivery-address" value="${deliveryAddress}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-date">Delivery Date:</label>
+                    <input type="text" id="delivery-date" name="delivery-date" value="${deliveryDate}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-time">Delivery Time:</label>
+                    <input type="text" id="delivery-time" name="delivery-time" value="${deliveryTime}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests" readonly>${specialRequests}</textarea>
+                </div>
+                <button type="submit">Proceed to Checkout</button>
+            `;
+        });
+    
+        // Function to handle "Proceed to Checkout" button click
+        document.getElementById('cart-form').addEventListener('submit', function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+    
+            // Clear the form inputs
+            document.getElementById('selected-fuel').value = '';
+            document.getElementById('quantity').value = '';
+            document.getElementById('delivery-address').value = '';
+            document.getElementById('delivery-date').value = '';
+            document.getElementById('delivery-time').value = '';
+            document.getElementById('special-requests').value = '';
+    
+            // Optionally, perform any other actions necessary for completing the payment process
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Fueliter Delivery Service. All rights reserved.</p>
+        <!-- Add any additional footer links or information here -->
+    </footer>
+
+</body>
+</html>

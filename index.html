@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/cb/eb/76/cbeb76a07a92e539ae90850767376f98.jpg" alt="Logo">
+        </div>
+        <div class="title">
+            <h1>Fueliter</h1>
+        </div>
+    </header>
+    
+    <!-- Navigation Links Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="order.html">Order Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="home-hero">
+        <div class="hero-content">
+            <div class="text">
+            <strong>
+                <h1>Convinient Fuel Delivery Right To Your Dooestep.</h1>
+                <h2>Order Now!!!</h2>
+            </strong>
+            </div>
+            <div class="image">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/fuel-delivery-4972738-4137584.png" alt="Fuel Delivery Image">
+            </div>
+        </div>
+    </section>
+  
+
+
+    <!-- Service Section -->
+    <section id="services" class = list>
+        <h2>Services.</h2>
+        <ol>
+            <li>We offer on-demand delivery of various types of fuel, including gasoline, diesel, and propane.</li>
+            <li>Choose from flexible delivery options tailored to your needs, whether it's scheduled deliveries or emergency refueling.</li>
+            <li>Our user-friendly platform makes ordering fuel quick and hassle-free.</li>
+            <li>Experience reliable service and competitive pricing with every delivery.</li>
+        </ol>
+        <!-- Add information about your fuel delivery services here -->
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="data:image/jpeg;base64,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" alt="Customer 1">
+                <p>I've been using this service for months now, and I couldn't be happier. Quick, reliable, and saves me time!</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://mod.go.ke/wp-content/uploads/2022/05/passport-photo.jpg" alt="Customer 2">
+                <p>Fantastic experience! Fuel delivered right on time, and the customer service was exceptional. Highly recommend!</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://st2.depositphotos.com/1011382/7491/i/450/depositphotos_74913007-stock-photo-natural-real-african-man.jpg" alt="Customer 3">
+                <p>The convenience of having fuel delivered to my doorstep has been a game-changer. Excellent service all around!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Promotions Section -->
+    <section id="promotions">
+        <h2>Featured Promotions!!!!</h2>
+        <strong>
+            <p>Limited-time offer: Get $10 off your first fuel delivery with code FIRST10.</p>
+            <p>Refer a friend and receive a $20 credit towards your next order.</p>
+        </strong>        
+        <!-- Add any promotional offers or deals here -->
+    </section>
+
+    <!-- Need Assistance Section -->
+    <section id="assistance">
+        <h2>Need Assistance?!</h2>
+        <p>Feel free to reach out to us! Whether it's a quick inquiry or detailed assistance, we're here to help.</p>
+        <p>Simply give us a call, shoot us an email and well get back to you shortly.</p>
+        <!-- Add contact information or a contact form here -->
+    </section>
+
+    <!-- Connect with Us Section -->
+    <section id="connect">
+        <h2>Connect with Us on the latest Updates!!!</h2>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/YourPage" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/013/901/773/non_2x/facebook-icon-ios-facebook-social-media-logo-on-white-background-free-free-vector.jpg"  class="social-icon">
+                    Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/YourTwitter" target="_blank">
+                    <img src="https://www.edding.com/fileadmin/templates/templates-alphabet/template-letter-x.svg"  class="social-icon">
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/YourInstagram" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/910/691/non_2x/instagram-mobile-app-logo-instagram-app-icon-ig-app-free-free-vector.jpg"  class="social-icon">
+                    Instagram
+                </a>
+            </li>
+            <!-- Add more social media links with logos as needed -->
+        </ul>
+        <!-- Add social media links or contact details here -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Fueliter Delivery Service. All rights reserved.</p>
+        <!-- Add any additional footer links or information here -->
+    </footer>
+
+</body>
+</html>
+

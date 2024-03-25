@@ -1,0 +1,392 @@
+/* Styles for Logo */
+#logo {
+    float: right; /* Float the logo to the right */
+    margin-left: 20px; /* Add margin to the left of the logo */
+    margin-top: 5px; /* Add margin to the top of the logo */
+    border-top-left-radius: 10px; /* Apply border radius to top left corner */
+    border-bottom-left-radius: 10px; /* Apply border radius to bottom left corner */
+    border-top-right-radius: 10px; /* Apply border radius to top right corner */
+}
+
+/* Styles for Header Section */
+/* CSS for Header Section */
+header {
+    display: flex;
+    align-items: center;
+    background-color:  rgba(10, 80, 17, 1); /* Green background color */
+    color: #fff; /* White text color */
+    padding: 5px;
+    margin: 0; /* Remove default margin */
+}
+
+.logo img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Add space between the logo and the title */
+    border-top-left-radius: 120px; /* Adjust the top-left corner radius */
+    border-top-right-radius: 120px; /* Adjust the top-right corner radius */
+    border-bottom-left-radius: 0px; /* Adjust the bottom-left corner radius */
+    border-bottom-right-radius: 120px; /* Adjust the bottom-right corner radius */
+}
+
+
+
+/* Styles for Navigation Links Section */
+nav {
+    background-color: #ffffff; /* Light background color */
+    padding: 10px;
+    text-align: right; /* Align navigation links to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a.active {
+    color: #007bff; /* Change the color to your desired active color */
+    font-weight: bold; /* Optionally, you can make the active link bold */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove right margin for the last navigation item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    padding: 5px 10px;
+}
+
+
+/* CSS for the hero section */
+#hero h1 {
+    color: rgba(0, 0, 0, 1); /* Color for <h1> text */
+    font-family: "Akaya Telivigala", Arial, sans-serif;
+    font-size: 42px;
+}
+/* Styling for <h2> element within hero section */
+#hero h2 {
+    color: rgba(231, 17, 30, 1); /* Color for <h2> text */
+    font-size: 32px;
+}
+
+
+/* Flexbox container for hero content */
+
+/* Styling for Hero Section on Home Page */
+.home-hero {
+    /* Add your styles for the home hero section */
+    background-color: rgba(149, 145, 173, 0.29); /* Change to your desired background color */
+    padding: 50px; /* Adjust padding as needed */
+    text-align: center; /* Center-align the text */
+}
+
+.home-hero .hero-content {
+    /* Add styles for the hero content */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center-align items vertically */
+}
+
+.home-hero .text {
+    /* Add styles for the text */
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Add spacing between text and image */
+    text-align: left; /* Left-align the text */
+}
+/* Styling for image on the right side */
+
+.home-hero .image {
+    /* Add styles for the image */
+        flex: 1; /* Take up remaining space */
+        text-align: right; /* Right-align the image */
+
+
+    /* Adjust image size if needed */
+   
+        max-width: 100%; /* Make sure image doesn't exceed its container */
+        height: auto; /* Maintain aspect ratio */
+    
+}
+
+/* Styling for Hero Section on About Us Page */
+.about-hero {
+    /* Add your styles for the about hero section */
+    background-color: rgba(149, 145, 173, 0.29); /* Change to your desired background color */
+    padding: 50px; /* Adjust padding as needed */
+    text-align: center; /* Center-align the text */
+
+}
+
+.about-hero .hero-content {
+    /* Add styles for the hero content */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center-align items vertically */
+}
+
+.about-hero .text {
+    /* Add styles for the text */
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Add spacing between text and image */
+    text-align: left; /* Right-align the text */
+    max-width: 100%; /* Make sure image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-hero .image {
+    /* Add styles for the image */
+    flex: 1; /* Take up remaining space */
+    text-align: left; /* left-align the image */
+}
+/* Styling for Hero Section on Services Page */
+.services-hero {
+    /* Add your styles for the services hero section */
+    padding: 50px; /* Adjust padding as needed */
+    text-align: center; /* Center-align the text */
+}
+
+.services-hero .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.services-hero .text {
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Add spacing between text and image */
+    text-align: left; /* Right-align the text */
+    max-width: 110%; /* Make sure image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.services-hero .image {
+    flex: 1;
+    text-align: left;
+    width: 811px; /* Adjust the width as needed */
+    height: 438px; /* Adjust the height as needed */
+    object-fit: cover; /* Crop the image to cover the specified dimensions */
+    object-position: left; /* Align the image to the left side */
+    max-width: 50%; /* Ensure image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+ 
+}
+.services-hero .text h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9b0606;
+}
+
+#services.list ul {
+    list-style-type: square; /* Set the bullet point style */
+}
+#testimonials {
+    text-align: center;
+    background-color: rgb(59, 80, 72);
+    color: #fff;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 30%; /* Adjust as needed */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 100px; /* Adjust as needed */
+    border-radius: 50%; /* To make the image circular */
+    margin-bottom: 10px;
+}
+
+/* CSS for Promotions Section with ID "promotions" */
+#promotions {
+    background-image: url('https://i.pinimg.com/originals/d2/04/04/d2040481acb4e8ef45680953fa5523b6.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: #ffffff; /* Text color for better contrast */
+    padding: 50px; /* Add padding for better spacing */
+    text-align: center; /* Center-align the text */
+    font-size: 32px;
+
+}
+footer {
+    background-color: rgba(10, 80, 17, 1); /* Background color for the footer */
+    color: #fff; /* Text color for better contrast */
+    padding: 0.5px; /* Add padding for better spacing */
+    text-align: center; /* Center-align the text */
+}
+
+/* Style for the pricing section */
+#pricing {
+    background-color: rgba(24, 46, 104, 1); /* Add your desired background color */
+    padding: 20px; /* Add padding for spacing */
+}
+/* Style for pricing information */
+/* Style for pricing information */
+#pricing h2 {
+    font-size: 30px; /* Change the font size */
+    color: #ffffff; /* Change the text color */
+    margin-bottom: 10px; /* Add space below each pricing item */
+}
+
+#pricing p {
+    font-size: 20px; /* Change the font size */
+    color: #ffffff; /* Change the text color */
+    margin-bottom: 10px; /* Add space below each pricing item */
+}
+#order {
+    background-color: #f9f9f9; /* Background color for the order section */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add space between form groups */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+}
+
+label {
+    width: 200px; /* Set a fixed width for labels */
+    text-align: right; /* Right-align labels */
+    margin-right: 20px; /* Add space between labels and input fields */
+}
+
+input[type="text"], textarea {
+    flex: 1; /* Take remaining space */
+    padding: 8px; /* Add padding for input fields */
+    max-width: 700px; /* Set a maximum width for text areas */
+    width: 100%; /* Ensure the text area fills the available space */
+}
+
+select {
+    width: 150px; /* Set a specific width for select dropdowns */
+}
+
+
+
+
+/* CSS for the Login Section */
+#login {
+    background-color: #f2f2f2; /* Background color for the login section */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Style for the login form container */
+.login-container {
+    max-width: 400px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the form */
+form {
+    margin-bottom: 20px; /* Add space below the form */
+}
+
+/* Style for form labels */
+label {
+    display: block; /* Display labels as block elements for better spacing */
+    margin-bottom: 5px; /* Add space below each label */
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Set input fields to full width */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 10px; /* Add space below each input field */
+    border: 1px solid #ccc; /* Add border for visual clarity */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+}
+
+/* Style for the login button */
+button[type="submit"] {
+    width: 100%; /* Set button width to full width */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style for the "Forgot password?" link */
+.forgot-password a {
+    color: #007bff; /* Link color */
+}
+
+/* Style for the "Don't have an account? Sign Up" message */
+.signup-link {
+    text-align: center; /* Center-align the message */
+}
+
+/* Reset default margin and padding for list items */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* CSS for the Queries Section */
+#queries {
+    background-color: #f9f9f9; /* Background color for the queries section */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Style for the form container */
+.contact-container {
+    max-width: 400px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for form labels */
+label {
+    display: block; /* Display labels as block elements for better spacing */
+    margin-bottom: 5px; /* Add space below each label */
+}
+
+/* Style for form input fields and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Set input fields and textarea to full width */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 10px; /* Add space below each input field */
+    border: 1px solid #ccc; /* Add border for visual clarity */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+    width: 100%; /* Set button width to full width */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.social-icon {
+    width: 30px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+
+
+
+
